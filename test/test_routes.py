@@ -1,10 +1,10 @@
 import pytest
-import flaskrn.app
+from flaskrn.app import *
 
 
 
 def test_home_page():
-    respone = flaskrn.app.test_client().get("/")
+    respone = app.test_client().get("/")
     res = respone.data.decode('utf-8')
     assert "blockcontent" in res
     assert "My Webpage" in res
