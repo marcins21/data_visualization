@@ -1,5 +1,5 @@
 import pytest
-from flask_app import *
+from flaskrn.app import *
 
 
 def test_home_page():
